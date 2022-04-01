@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:wght@700;900&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@400;600;700&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono:wght@700&family=Spartan:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Commissioner', sans-serif;
+    background-color: rgba(224, 224, 224, 0.418);
+    position: relative;
+}
+
+header{
+     background-image: url(images/image-hero-mobile.jpg);
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     padding:30px 20px 265px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     position: relative;    
+}
+
+header .close{
+    display: none;
+}
+
+header section{
+    position: absolute;
+    left:0;
+    top:40px;
+    background-color: #fff;
+    color:#000; 
+    padding:0px 0px;
+    width:89.4%;
+    margin:30px 20px 0;
+    border-radius:10px;
+    display: none;
+    z-index: 2;
+    box-shadow: 0 40px 800px 0 rgb(128, 127, 127);
+}
+
+header section h4{
+    padding:25px 30px;
+    border-bottom: 1px solid gray;
+    font-size:20px;
+}
+
+header section :last-child{
+    border:none;
+}
+
+
+/* .body{
+    background-color: rgba(255, 255, 255, 0.568);
+} */
+
+.head{
+    position: relative;
+    padding:20px;
+    top:-100px;
+    text-align: center;
+}
+
+.dol{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dolls{
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+
+.aside{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; */
+    background-color: #fff;
+    padding:35px 5px;
+    border-radius:10px;
+    margin:10px 0 20px;
+    /* border:2px solid black; */
+    position: relative;
+}
+
+.aside .mastercraftlogo{
+    position: absolute;
+    top:-30px;
+    text-align: center;
+}
+
+.aside h2{
+    margin:10px 0 20px;
+}
+
+/* .aside p{
+    font-size:20px;
+    line-height:1.6rem;
+    padding:0 10px;
+} */
+
+button{
+    padding:15px 25px;
+    border-radius: 50px;
+    border:none;
+    color:#fff;
+    background-color: hsl(176, 50%, 47%);
+    font-size:15px;
+    font-weight: 600;
+    margin:0 10px 0 0;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(176, 72%, 28%);
+}
+
+/* .aside button{
+    margin:0 40px 0 0;
+} */
+
+.bookmark{
+    display: none;
+}
+
+.bodyflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 0 0;
+    padding:0 10px;
+    position: relative;
+}
+
+.bodyflex .bookmark{
+    display: none;
+    position: relative;
+}
+
+.aside h3{
+    margin:10px 0;
+    font-size:30px;
+    font-weight: 900;
+}
+
+.aside p{
+    font-size:15px;
+    margin:10px 0 25px;
+    color:gray;
+
+}
+
+.aside hr{
+    margin:0 120px;
+}
+
+/* .aside small{
+    width:100%;
+    background-color: gainsboro;
+    padding:0 95% 0 0;
+    margin:0 5px;
+    border-radius: 20px;;
+    position: relative;
+}
+
+.aside small:after{
+    content: "";
+    width:75%;
+    height:15px;
+    background-color: hsla(176, 50%, 47%, 0.678);
+    position: absolute;
+    top:0px;
+    left:1px;
+    border-radius: 10px;
+} */
+
+progress {
+    width:90%;
+    height:15px;
+    border-radius: 30px;
+}
+progress::-webkit-progress-bar {
+    background-color: rgba(211, 211, 211, 0.226);
+    border-radius: 30px;
+}
+progress::-webkit-progress-value {
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 20px;
+}
+progress::-moz-progress-bar {
+    background-color: lightgray;
+    border-radius: 30px;
+}
+
+.body-content{
+    background-color: #fff;
+    margin:0 20px;
+    padding:40px 20px;
+    position: relative;
+    top:-120px;
+    border-radius: 10px;
+}
+
+.body-content h3{
+    margin:10px 0 30px;
+    font-size:20px;
+}
+
+.body-content p{
+    line-height:1.7rem;
+    font-size:15px;
+    color:gray;
+}
+
+.body-content :nth-child(3){
+    margin:25px 0;
+    font-size:14.5px;
+}
+
+.body-content .container{
+    padding:20px;
+    border:1px solid gray;
+    border-radius:10px;
+    margin:0 0 20px;
+}
+
+.body-content .container nav{
+    display: flex;
+    align-items:left;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.body-content .container nav h5{
+    color:hsl(176, 50%, 47%);
+    margin:10px 0 20px;
+    font-weight: 600;
+}
+
+.body-content .container p{
+    font-size:15px;
+}
+
+.body-content .container .para2{
+    font-size:15.2px;
+}
+
+.body-content .container small{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin:0 0 20px;
+}
+
+.body-content .container small b{
+    font-size:25px;
+    margin:0 10px 0 0;
+}
+
+.body-content .container:last-child{
+    border:1px solid rgba(128, 128, 128, 0.233);
+}
+
+.body-content .container:last-child b,
+.body-content .container:last-child p{
+    color:rgba(0, 0, 0, 0.493);
+}
+
+.body-content .container:last-child h5{
+    color:hsla(176, 50%, 47%, 0.432);
+}
+
+.body-content .container:last-child button{
+    background-color: hsla(0, 0%, 48%, 0.349) ;
+    color:rgba(255, 255, 255, 0.856);
+}
+
+
+/* MODAL SECTION */
+
+.modal{
+    position: absolute;
+    top:0;
+    margin:130px 20px 0;
+    padding:30px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display:none ;
+    box-shadow: 0px 10px 10000px 2000px rgba(0, 0, 0, 0.473);
+    z-index: 2;
+}
+
+.modal nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding:0 10px 0 0;
+}
+
+.modal h4{
+    font-size:20px;
+    margin:0px 0 20px;
+}
+
+.modal nav img{
+    cursor: pointer;
+}
+
+.modal small:hover b{
+    color:hsl(176, 50%, 47%);
+    transition: all 2s;
+}
+
+.modal p{
+    font-size:15px;
+    margin:0 0 10px;
+    line-height: 1.5rem;
+    color:gray;
+}
+
+.modal .container{
+    border:1px solid rgba(128, 128, 128, 0.432);
+    border-radius:10px;
+    padding:30px 0 20px;
+    position: relative;
+    margin:0 0 20px;
+}
+
+.modal .container:hover{
+    border:1px solid hsl(176, 50%, 47%);
+}
+
+.modal .container:last-child:hover{
+    border: 1px solid rgba(128, 128, 128, 0.377);
+}
+
+.modal .container:last-child{
+    border:1px solid rgba(128, 128, 128, 0.103);
+}
+
+.modal .container:last-child b,
+.modal .container:last-child p{
+    color:rgba(0, 0, 0, 0.493);
+}
+
+.modal .container:last-child h5{
+    color:hsla(176, 50%, 47%, 0.432);
+}
+
+.modal .container:last-child button{
+    background-color: hsla(0, 0%, 48%, 0.349) ;
+    color:rgba(255, 255, 255, 0.856);
+}
+.modal .container small{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:0 0 30px;
+    padding:0 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* .modal .container .left{
+    position: absolute;
+} */
+
+.modal .container small section b{
+    font-size:15px;
+}
+
+.modal .container small i{
+    padding:10px;
+    border-radius: 20px;
+    background-color: #fff;
+    border:1px solid gray;
+    margin:0 20px 0 0;
+}
+
+.modal .container small:hover i{
+    border:1px solid hsl(176, 50%, 47%);
+    transition: all 2s;
+}
+
+
+.modal .container p{
+    margin:10px 0 20px;
+    font-size:15px;
+    padding:0 25px;
+}
+
+.modal .container small section h5{
+    font-size:14px;
+    margin:10px 0 0;
+    color:hsl(176, 50%, 47%);
+}
+
+.modal .container small b{
+    margin:0;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.modal .container .left b{
+    font-size:20px;
+}
+
+.modal .container small p{
+    margin: 0 0 0 5px;
+    padding:0;
+}
+
+.modal .container .pledgestart{
+    border-top:1px solid rgba(128, 128, 128, 0.349);
+    padding:20px ;
+    text-align: center;
+    display: none;
+}
+
+.modal .container:hover .pledgestart{
+    display: none;
+    border-top:1px solid hsla(176, 50%, 47%, 0.678);
+}
+
+
+.modal .container:hover:after{
+    content: "";
+    width:10px;
+    height:10px;
+    border:2px solid #fff;
+    background-color: hsla(176, 50%, 47%, 0.678);
+    position: absolute;
+    top:34px;
+    left:29.4px;
+    border-radius:50px ;
+    transition: all 2s;
+}
+
+.modal .bal:hover:after{
+    top:46px;
+}
+
+.modal .bal:last-child:hover:after{
+    background-color: rgba(128, 128, 128, 0);
+}
+
+
+.modal .container .pledgestart input{
+    outline:none;
+    width:100%;
+    margin:10px 10px 25px;
+    padding:10px;
+    font-size:15px;
+    border:none;
+    font-weight: 550;
+    font-family:"commissioner", sans-serif;
+}
+
+.modal .container .pledgestart input::placeholder{
+    text-align: center;
+}
+
+.modal .container .pledgestart .first-button{
+    background-color: #fff;
+    border:1px solid rgba(128, 128, 128, 0.397);
+    color:#000;
+    margin:0 5px 0;
+}
+
+.modal .container .pledgestart .first-button::first-letter{
+    color:rgba(128, 128, 128, 0.507);
+    margin:0 5px 0 0;
+}
+
+.modal .container .pledgestart .first-button:hover{
+    border:1px solid hsl(176, 50%, 47%);
+}
+
+.modal .container .pledgestart button{
+    padding:13px 20px;
+    border:1px solid hsl(176, 50%, 47%);
+}
+
+.modal .container:last-child:hover .pledgestart{
+    display: none;
+}
+.modal .container:last-child:hover:after{
+    background-color: gray;
+}
+
+.modal .container:last-child .pledgestart button:last-child{
+    border:1px solid rgba(128, 128, 128, 0.041);
+}
+
+/* SUCCESS ALERT SECTION */
+
+.successAlert{
+    margin:0 20px;
+    position: absolute;
+    top:150px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding:20px 20px 34px;
+    display:none ;
+    z-index:3;
+    box-shadow: 0 10px 100px 9000px rgba(3, 3, 3, 0.473);
+    /* border:2px solid black; */
+}
+
+.successAlert h4{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.successAlert p{
+    color:gray;
+    font-size: 15px;
+    line-height: 1.7rem;
+}
+
+.successAlert button{
+    padding:15px 30px;
+    margin:20px 0;
+}
+
+
+@media screen and (min-width:375px) {
+    .modal{
+        padding:30px 20px;
+    }
+
+    .bodyflex{
+        padding:0 20px;
+    }
+
+    /* .dolls{
+        padding:0 0 0 10px;
+    } */
+  
+    
+   
+}
+
+@media screen and (min-width:700px) {
+    .hamburger,
+    .close{
+        display: none;
+    }
+
+    .hamburger-content{
+        display: flex;
+        position: relative;
+        top:0;
+        left:0;
+        padding:0;
+        margin:0;
+        width:auto;
+        background-color: inherit;
+        color:#fff;
+        border:none;
+        box-shadow: none;
+    }
+
+    .hamburger-content h4{
+        border-bottom: none;
+        cursor: pointer;
+    }
+
+    article{
+        padding:30px 10%;
+    }
+
+    .dolls{
+        padding:0;
+    }
+    
+    .bodyflex .bookmark{
+        display: block;
+        position: absolute;
+        right:0;
+        padding:15px 35px 15px 50px;
+        background-color:  hsla(0, 0%, 48%, 0.24);
+        color:rgba(0, 0, 0, 0.445);
+    }
+    
+    .bodyflex img{
+        position: absolute;
+        right:140px;
+        z-index:1;
+        /* filter: blur(90deg); */
+    }
+
+    .head-acounting-section .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin:0;
+        padding:0 20px;
+    }
+
+    .aside hr{
+        margin:20px 50px;
+    }
+
+    .body-content .container nav{
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .modal{
+        margin:130px 10%;
+        /* display: block; */
+    }
+
+    .modal .container small section{
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .modal .container small section b{
+        margin:0 15px 0 0;
+    }
+
+
+    .modal .container .left{
+        position: absolute;
+        top:36px;
+        right:0;
+    }
+
+    .modal .container .left b{
+        font-size:20px;
+    }
+
+    .modal .bal:hover:after{
+        top:37px;
+    }
+
+    .modal .container .pledgestart{
+        display: none;
+        justify-content:space-between;
+        align-items: baseline;
+        width:100%;
+    }
+
+    .modal .container .pledgestart input{
+        width:50%;
+        /* border:2px solid black; */
+        margin:10px 10px 10px 0;
+    }
+
+    .modal .container .pledgestart input::placeholder{
+        text-align: left;
+    }
+
+    .modal .container .pledgestart .first-button{
+        margin:0 20px 0 ;
+    }
+
+    .successAlert{
+        margin:0 20%;
+        top:410px;
+    }
+}
+
+@media screen and (min-width:1000px){
+    header{
+        background-image: url(images/image-hero-desktop.jpg);
+    }
+
+    .head{
+        top:-120px;
+    }
+
+    article{
+        padding:30px 15%;
+    }
+
+    .aside hr{
+        margin:20px 70px;
+    }
+
+    /* .head-acounting-section .content{
+        padding:0 20px;
+    } */
+
+    .modal{
+        margin:130px 17%;
+        /* display: block; */
+    }
+
+    .successAlert{
+        margin:0 30%;
+        /* display: block; */
+    }
+}
+
+@media screen and (min-width:1300px) {
+    article{
+        padding:30px 23%;
+    }
+
+    .aside hr{
+        margin:20px 80px;
+    }
+
+    .modal{
+        margin:130px 24.3%;
+    }
+
+    .successAlert{
+        margin:0 33%;
+    }
+}
